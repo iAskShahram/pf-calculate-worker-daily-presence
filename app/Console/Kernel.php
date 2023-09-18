@@ -15,8 +15,8 @@ class Kernel extends ConsoleKernel
 	 */
 	protected function schedule(Schedule $schedule)
 	{
-		$schedule->command('hr:calculatedailypresence')->everyMinute();
-		// $schedule->command('hr:calculatedailypresence')->dailyAt('20:00');
+		// $schedule->command('hr:calculatedailypresence')->everyMinute();
+		$schedule->command('hr:calculatedailypresence')->dailyAt('20:00');
 	}
 
 	/**

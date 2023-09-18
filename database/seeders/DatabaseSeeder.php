@@ -28,5 +28,10 @@ class DatabaseSeeder extends Seeder
 			$office->ip = $OfficeIP['ip'];
 			$office->save();
 		}
+
+		$preference = new \App\Models\Preference();
+		$preference->key = 'worker_daily_presence_uri';
+		$preference->value = 'backend.grabdata.org/api/pf';
+		$preference->save();
 	}
 }
